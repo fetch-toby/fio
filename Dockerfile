@@ -1,6 +1,6 @@
 FROM debian:stretch
 
-RUN sudo su
+CMD sudo su
 
 RUN apt-get update -y && apt-get install fio -y
 
