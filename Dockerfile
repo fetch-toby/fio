@@ -1,15 +1,13 @@
 FROM debian:stretch
 
-CMD sudo su
+RUN apt-get update -yq && apt-get install fio -yq
 
-RUN apt-get update -y && apt-get install fio -y
+RUN mkdir /data
 
-RUN mkdir /fio
+RUN mkdir /config
 
-ADD job.fio /fio/
+ADD job.fio /config/
 
-ADD script.sh /fio
-
-CMD chmod+x script.sh
+ADD script.sh /script.sh
 
 ENTRYPOINT ["/script.sh"]

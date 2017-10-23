@@ -1,11 +1,11 @@
 #!/bin/bash
 
-export FIO_JOB_FILE=${FIO_JOB_FILE:-/fio/job.fio}
+export FIO_JOB_FILE=${FIO_JOB_FILE:-/config/job.fio}
 export JOB_NAME=${JOB_NAME:-fio}
 export NJ=${NJ:-8}
 export IOD=${IOD:-16}
 export BLOCK_SIZE=${BLOCK_SIZE:-4k}
-export F_NAME=${F_NAME:-/fio/myfio}
+export F_NAME=${F_NAME:-/data/myfio}
 export DIRECT=${DIRECT:-1}
 export SIZE=${SIZE:-256M}
 export RW=${RW:-read}
