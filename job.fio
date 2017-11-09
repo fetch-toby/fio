@@ -1,0 +1,14 @@
+[global]
+filename=${F_NAME}
+ioengine=libaio
+iodepth=${IOD}
+rw=${RW}
+numjobs=${NJ}
+direct=${DIRECT}
+bs=${BLOCK_SIZE}
+runtime=${RUN_TIME}
+time_based=1
+size=${SIZE}
+group_reporting
+
+[randwritejob]
