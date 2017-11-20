@@ -9,6 +9,7 @@ bs=${BLOCK_SIZE}
 runtime=${RUN_TIME}
 time_based=1
 size=${SIZE}
+<<<<<<< HEAD
 rwmixread=${RP}
 rwmixwrite=${WP}
 write_bw_log
@@ -17,3 +18,8 @@ write_iops_log
 group_reporting
 
 [randread]
+=======
+group_reporting
+
+[randwritejob]
+>>>>>>> 10a3d833cccce1a5175f910412806fe2629bdf17
